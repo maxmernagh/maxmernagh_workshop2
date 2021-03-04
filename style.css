@@ -1,0 +1,197 @@
+ /* colours - lightgrey (#F8F8F8), leafs blue (#00205B), light blue (#1734A7) */
+ /* Tell each div how many columns it should span */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #00205B;
+}
+
+hr {
+  border-color: #1734A7;
+  border-style: solid;
+}
+
+ /* Title */
+h1 {
+  font-family: 'Barlow', sans-serif;
+  margin: 0%;
+  padding: 0em 0.9375em 0.4em 0.9375em;
+  font-weight: 700;
+  font-size: 3.5em;
+  word-break: normal;
+  text-align: center;
+  letter-spacing: 0.5pc;
+  color: #F8F8F8;
+}
+
+/* Subhead */
+h3 {
+  font-family: 'Barlow', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: center;
+  color: #F8F8F8;
+  letter-spacing: 0.05em;
+}
+
+/* Title & Subhead */
+.title-content {
+  grid-column: span 12;
+  padding: 2em 7.4em 2em 7.4em;
+  background-color: #00205B;
+  word-spacing: 0.1em;
+  line-height: 3.8em;
+}
+
+/* Defining grid */
+.gridcontainer {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+/* Main Image */
+.hero-image {
+  grid-column: span 12;
+  height: 60vh;
+  background-color: #00205B;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url("img/leafs3.jpg");
+  background-blend-mode: screen;
+}
+
+/* Second Image */
+.end-intro-image {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  height: 60vh;
+  background-color: #00205B;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url("img/leafs4.jpeg");
+  background-blend-mode: screen;
+}
+
+.end-image {
+  span: 12;
+  height: 100vh;
+  background-color: #00205B;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url("img/leafs1.jpg");
+  background-blend-mode: screen;
+}
+
+/* History parameters */
+.intro-content {
+  grid-column: span 12;
+  padding: 0em 25% 3em 25%;
+  background-color: #00205B;
+  text-align: justify;
+}
+
+
+.history p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  line-height: 1.8em;
+  letter-spacing: 0.02em;
+  color: #F8F8F8;
+}
+
+/* Recipe Start parameters */
+.recipe-title {
+  grid-column: span 12;
+  padding: 2em 11% 2em 11%;
+  background-color: #00205B;
+  text-align: justify;
+}
+
+.recipe-intro h3 {
+  font-weight: 500;
+  padding: 1em 9em 1em 9em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.recipe-main {
+  grid-column: span 12;
+  padding: 0em 10em 2em 10em;
+  background-color: #00205B;
+  text-align: center;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.box {
+  width: 20%;
+  text-align: left;
+  border: 0.17em #b6a16a solid;
+  padding: 2em 3em 2em 3em;
+  margin: 0em 2.2em;
+}
+
+.box li{
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  color: #F8F8F8;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+}
+
+.box p {
+  font-weight: 300;
+  font-family: 'Barlow', sans-serif;
+  color: #1734A7;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+}
+
+.endnotes {
+  grid-column: span 12;
+  padding: 0em 7.4em 3em 7.4em;
+  background-color: #00205B;
+  text-align: justify;
+}
+
+.endnotes p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: #F8F8F8;
+  text-align: center;
+}
+
+a {
+  color: #b6a16a;
+  text-decoration: none;
+}
+
+@media (max-width: 1063px) {
+  .title-content h3 {
+  line-height: 2em;
+}
+}
